@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Lookup</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/email.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h2>Email Lookup: Website to Check Emails</h2>
+        </div>
+        <ul></ul>
+      </nav>
+    </header>
+    <main>
+      <div class="box">
+        <div class="container" >
+          <h1>Enter your email to validate</h1>
+          <form action="/submit" method="post">
+            <input
+              placeholder="Enter your email to validate"
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+            <br /><br />
+            <input id="submitBtn" class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="container" >
+          <h2>Your Results</h2>
+          <div id="resultCont">Your results will show here</div>
+        </div>
+      </div>
+    </main>
+    <footer>made with ❤️</footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

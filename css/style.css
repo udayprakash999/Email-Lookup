@@ -1,0 +1,131 @@
+  /* General reset */
+body, h1, h2, p, ul, li, input, button, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #0078d7;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header .logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Navigation (hidden) */
+  nav ul {
+    list-style: none;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    margin-bottom: 2rem;
+  }
+  
+  .container h1,
+  .container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #0078d7;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+  }
+  
+  /* Button styling with animation */
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #0078d7;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+  }
+  
+  input[type="submit"]:active {
+    transform: scale(1);
+  }
+  
+  /* Results container */
+  #resultCont {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-height: 50px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      padding: 1.5rem;
+    }
+  
+    header .logo h2 {
+      font-size: 1.2rem;
+    }
+  
+    input[type="submit"] {
+      font-size: 1rem;
+    }
+  }
+  
